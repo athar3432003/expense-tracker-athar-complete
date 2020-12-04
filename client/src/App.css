@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+body {
+  background-color: #ccc;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.minus {
+  color: red;
+}
+.plus {
+  color: green;
+}
+ul {
+  width: 25%;
+  background-color: #fff;
+  margin: auto;
+  padding: 5px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  /* border-left: 1px solid #ccc; */
+}
+.income-expense {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  background-color: #fff;
+}
+form {
+  width: 25%;
+  margin: auto;
+  text-align: left;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+  margin-bottom: 3px;
+}
+.delete-btn {
+  color: red;
+  margin: 5px;
+  transition: 1s;
+  width: 20px;
+}
+.delete-btn:hover {
+  border: 1px solid red;
+  transform: scale(1.2);
+}
+.btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+.btb:hover {
+  background-color: #4caf50;
+  color: white;
+  /* border: 1px solid #fff; */
+  outline: white;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(81, 92, 81);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

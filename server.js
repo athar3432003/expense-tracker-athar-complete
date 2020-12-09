@@ -24,10 +24,8 @@ app.use("/api/v1/transactions", transactions);
 if ((process.env.NODE_ENV = "production")) {
   app.use(express.static("client/build"));
   app.get("*", (req, res) => {
-    res.sendFile(
-      path.resolve(__dirname.substr(0, 1), "client", "build", "index.html")
-    );
-    //res.sendFile(path.join(__dirname,"client/build/index.html"));
+    //res.sendFile(path.resolve(__dirname.substr(0, 1), "client", "build", "index.html"));
+    res.sendFile(path.join(__dirname.substr(0, 1), "client/build/index.html"));
     //console.log("working directory", __dirname);
     //const index = path.join(__dirname, "index.html");
     //res.sendFile(index);

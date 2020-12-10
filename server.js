@@ -28,7 +28,7 @@ if ((process.env.NODE_ENV = "production")) {
     res.sendFile(path.resolve("client", "build", "index.html"))
   );
 }
-console.log("env " + process.env.NODE_ENV);
+//console.log("env " + process.env.NODE_ENV);
 //app.get("/", (req, res) => res.send("Hello world"));
 const PORT = process.env.PORT;
 app.listen(

@@ -9,9 +9,9 @@ export const Balance = () => {
     .toFixed(2);
   //console.log(total);
   return (
-    <>
-      <h4>Your Balance</h4>
-      <h1 id="balance">{total}</h1>
-    </>
+    <div className="balance">
+      <h2>Your Balance</h2>
+      <h2 id="balance">{total}</h2>
+    </div>
   );
 };

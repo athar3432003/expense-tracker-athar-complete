@@ -5,6 +5,16 @@
 }
 .App {
   text-align: center;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+}
+.header {
+  color: white;
+  padding: 5px;
+  border-bottom: 1px dotted white;
+  background-color: green;
+  margin: 10px 0 0 0;
 }
 body {
   background-color: #ccc;
@@ -13,6 +23,11 @@ body {
   height: 40vmin;
   pointer-events: none;
 }
+.balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
 .minus {
   color: red;
 }
@@ -20,7 +35,7 @@ body {
   color: green;
 }
 ul {
-  width: 25%;
+  width: 100%;
   background-color: #fff;
   margin: auto;
   padding: 5px;
@@ -32,16 +47,20 @@ li {
   border-bottom: 1px solid #ccc;
   /* border-left: 1px solid #ccc; */
 }
+.list {
+  height: 200px;
+  overflow-y: scroll;
+}
 .income-expense {
   display: flex;
-  width: 25%;
+  width: 100%;
   justify-content: space-between;
   margin: auto;
   padding: 10px;
   background-color: #fff;
 }
 form {
-  width: 25%;
+  width: 100%;
   margin: auto;
   text-align: left;
 }
@@ -78,7 +97,7 @@ input[type="number"] {
   cursor: pointer;
   width: 100%;
 }
-.btb:hover {
+.btn:hover {
   background-color: #4caf50;
   color: white;
   /* border: 1px solid #fff; */
